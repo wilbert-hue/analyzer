@@ -1,28 +1,38 @@
 {
   "Global": {
-    "By Type": {
-      "Sub-Normothermic Perfusion (20–34°C)": {},
-      "Warm or Normothermic Perfusion (35–37°C)": {}
+    "By Analyzer Type": {
+      "Liquid Analyzers": {},
+      "Gas Analyzers": {},
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Others (Moisture Analyzers, Thermal Conductivity Analyzers)": {}
     },
-    "By Organ Type": {
-      "Liver": {},
-      "Heart": {},
-      "Lung": {},
-      "Kidney": {},
-      "Others (Pancreas, Small bowel / Intestine, Composite Tissues / Limb Perfusion (emerging use cases))": {}
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {},
+      "Portable / Field Analyzers": {},
+      "Others (Rack mounted analyzers)": {}
     },
-    "Application / Use Case": {
-      "Organ Preservation": {},
-      "Viability Assessment": {},
-      "Physiologic Transport": {},
-      "Reconditioning Marginal Organs": {},
-      "Others (Research Use / Protocol development)": {}
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable Analyzers": {},
+      "Modular Analyzers": {},
+      "Others (Rack mount analyzers)": {}
     },
-    "By End User": {
-      "Hospitals & Clinics": {},
-      "Specialty Clinic/Centers": {},
-      "Transplant Centers": {},
-      "Others (Research Institutes/Centers, Organ Procurement Organizations, etc.)": {}
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {},
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Others (Food and Beverage, Pulp and Paper, Metals and Mining)": {}
     },
     "By Region": {
       "North America": {
