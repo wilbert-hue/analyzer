@@ -439,46 +439,54 @@ export function EnhancedFilterPanel() {
               />
               
               {/* Add Button - Only show if a path is selected */}
-              {cascadePath.length > 0 && (
-                <button
-                  onClick={() => {
-                    // Use the last item in the path as the segment
-                    const segmentToAdd = cascadePath[cascadePath.length - 1]
-                    if (segmentToAdd) {
-                      const id = `${selectedSegmentType}::${segmentToAdd}`
-                      // Check if this exact segment+type combination already exists
-                      const exists = selectedSegments.find(s => s.segment === segmentToAdd && s.type === selectedSegmentType)
-                      
-                      if (!exists) {
-                        const newSegment = {
-                          type: selectedSegmentType,
-                          segment: segmentToAdd,
-                          id: id
-                        }
-                        
-                        const updated = [...selectedSegments, newSegment]
-                        setSelectedSegments(updated)
-                        
-                        console.log('🔧 EnhancedFilterPanel: Cascade selection, preserving aggregationLevel:', filters.aggregationLevel)
-                        updateFilters({ 
-                          segments: updated.map(s => s.segment) || [],
-                          segmentType: selectedSegmentType || '',
-                          advancedSegments: updated || [],
-                          aggregationLevel: filters.aggregationLevel !== undefined ? filters.aggregationLevel : null // Preserve aggregation level
-                        } as any)
-                      }
-                      
-                      // Clear cascade selection after adding
-                      setCascadePath([])
-                      setCurrentSegmentSelection('')
-                    }
-                  }}
-                  className="w-full mt-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                >
-                  <Plus className="h-4 w-4" />
-                  <span>Add Selected Segment</span>
-                </button>
-              )}
+              {cascadePath.length > 0 && (() => {
+                const segmentToAdd = cascadePath[cascadePath.length - 1]
+                const isParentSegment = cascadePath.length === 1 &&
+                  hierarchy[segmentToAdd] &&
+                  Array.isArray(hierarchy[segmentToAdd]) &&
+                  hierarchy[segmentToAdd].length > 0 &&
+                  !(hierarchy[segmentToAdd].length === 1 && hierarchy[segmentToAdd][0] === segmentToAdd)
+
+                const handleAddCascadeSegment = () => {
+                  if (!segmentToAdd) return
+                  const id = `${selectedSegmentType}::${segmentToAdd}`
+                  const exists = selectedSegments.find(s => s.segment === segmentToAdd && s.type === selectedSegmentType)
+                  if (!exists) {
+                    const newSegment = { type: selectedSegmentType, segment: segmentToAdd, id }
+                    const updated = [...selectedSegments, newSegment]
+                    setSelectedSegments(updated)
+                    updateFilters({
+                      segments: updated.map(s => s.segment) || [],
+                      segmentType: selectedSegmentType || '',
+                      advancedSegments: updated || [],
+                      aggregationLevel: filters.aggregationLevel !== undefined ? filters.aggregationLevel : null
+                    } as any)
+                  }
+                  setCascadePath([])
+                  setCurrentSegmentSelection('')
+                }
+
+                return (
+                  <div className="mt-2 space-y-1.5">
+                    {isParentSegment && (
+                      <div className="text-xs text-gray-500 px-1">
+                        Add <span className="font-semibold text-gray-700">{segmentToAdd}</span> as a whole,
+                        or select a sub-type above first.
+                      </div>
+                    )}
+                    <button
+                      onClick={handleAddCascadeSegment}
+                      className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 flex items-center justify-center gap-2 text-sm"
+                    >
+                      <Plus className="h-4 w-4" />
+                      <span>
+                        Add &quot;{segmentToAdd}&quot;
+                        {isParentSegment ? ' (total)' : ''}
+                      </span>
+                    </button>
+                  </div>
+                )
+              })()}
             </>
           )}
         </div>

@@ -9,6 +9,8 @@ interface CascadeFilterProps {
   onSelectionChange: (path: string[]) => void
   maxLevels?: number
   placeholder?: string
+  /** Called when user wants to add the PARENT segment itself (not drilling further) */
+  onAddParent?: (segment: string) => void
 }
 
 interface LevelOption {
@@ -22,7 +24,8 @@ export function CascadeFilter({
   selectedPath,
   onSelectionChange,
   maxLevels = 5,
-  placeholder = 'Select...'
+  placeholder = 'Select...',
+  onAddParent
 }: CascadeFilterProps) {
   const [currentPath, setCurrentPath] = useState<string[]>(selectedPath || [])
 
@@ -238,6 +241,7 @@ export function CascadeFilter({
           const options = getLevelOptions(level)
           const selectedValue = currentPath[level] || ''
           const hasSelection = selectedValue !== ''
+          const selectedIsParent = hasSelection && hasRealChildren(selectedValue)
 
           return (
             <div key={level} className="space-y-1">
@@ -275,20 +279,21 @@ export function CascadeFilter({
                     ? 'No options available'
                     : level === 0
                       ? placeholder
-                      : `Select sub-segment ${level + 1}...`}
+                      : `Select sub-type ${level + 1}...`}
                 </option>
                 {options.map(option => (
                   <option key={option.value} value={option.value}>
                     {option.label}
-                    {option.hasChildren && ' →'}
+                    {option.hasChildren ? ' ▸ (has sub-types)' : ''}
                   </option>
                 ))}
               </select>
-              
-              {/* Show arrow indicator if there's a selection and it has real children */}
-              {hasSelection && hasRealChildren(selectedValue) && (
-                <div className="flex justify-center py-1">
-                  <ChevronRight className="h-4 w-4 text-black" />
+
+              {/* When a parent is selected, show an indication that sub-types exist below */}
+              {hasSelection && selectedIsParent && (
+                <div className="flex items-center gap-1 text-xs text-blue-600 pl-1">
+                  <ChevronRight className="h-3 w-3" />
+                  <span>Sub-types available below — or add <strong>{selectedValue}</strong> as a whole</span>
                 </div>
               )}
             </div>
@@ -300,7 +305,7 @@ export function CascadeFilter({
       {currentPath.length > 0 && (
         <div className="p-2 bg-blue-50 rounded-md border border-blue-200">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-xs font-medium text-blue-900">Selected Path:</span>
+            <span className="text-xs font-medium text-blue-900">Selected:</span>
             <button
               onClick={handleClearAll}
               className="text-xs text-blue-600 hover:text-blue-800 flex items-center gap-1"
@@ -309,12 +314,12 @@ export function CascadeFilter({
               Clear All
             </button>
           </div>
-          <div className="text-xs text-blue-800">
+          <div className="text-xs text-blue-800 flex items-center flex-wrap gap-0.5">
             {currentPath.map((segment, index) => (
-              <span key={index}>
-                <span className="font-medium">{segment}</span>
+              <span key={index} className="flex items-center gap-0.5">
+                <span className="font-semibold">{segment}</span>
                 {index < currentPath.length - 1 && (
-                  <ChevronRight className="h-3 w-3 inline mx-1 text-blue-600" />
+                  <ChevronRight className="h-3 w-3 text-blue-500" />
                 )}
               </span>
             ))}

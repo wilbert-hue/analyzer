@@ -26,9 +26,10 @@ export function ComparisonTable({ title, height = 600 }: ComparisonTableProps) {
     // Filter data
     const filtered = filterData(dataset, filters)
 
-    // Get the selected year (use base year or middle of range)
-    const year = filters.yearRange[0] + Math.floor((filters.yearRange[1] - filters.yearRange[0]) / 2)
-    const startYear = filters.yearRange[0]
+    // Use base year (2026) for VALUE display and CAGR/Growth start
+    const baseYear: number = (data.metadata as any).base_year || filters.yearRange[0]
+    const year = baseYear
+    const startYear = baseYear
     const endYear = filters.yearRange[1]
 
     // Helper function to parse CAGR (handles string, number, or null)
@@ -148,7 +149,7 @@ export function ComparisonTable({ title, height = 600 }: ComparisonTableProps) {
     )
   }
 
-  const year = filters.yearRange[0] + Math.floor((filters.yearRange[1] - filters.yearRange[0]) / 2)
+  const displayYear = (data.metadata as any).base_year || (filters.yearRange[0] + Math.floor((filters.yearRange[1] - filters.yearRange[0]) / 2))
   const valueUnit = filters.dataType === 'value' 
     ? `${data.metadata.currency} ${data.metadata.value_unit}`
     : data.metadata.volume_unit
@@ -161,7 +162,7 @@ export function ComparisonTable({ title, height = 600 }: ComparisonTableProps) {
             {title || 'Data Comparison Table'}
           </h3>
           <p className="text-sm text-black mt-1">
-            Year: {year} | Values in {valueUnit}
+            Year: {displayYear} | Values in {valueUnit}
           </p>
         </div>
         <button

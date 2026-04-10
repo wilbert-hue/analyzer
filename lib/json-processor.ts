@@ -504,7 +504,8 @@ async function processSegmentTypeAsync(
   segmentType: string,
   geographies: string[],
   allYears: number[],
-  segmentTypeIndex: number
+  segmentTypeIndex: number,
+  baseYear?: number
 ): Promise<{
   segmentDimension: SegmentDimension
   records: DataRecord[]
@@ -1152,8 +1153,8 @@ async function processSegmentTypeAsync(
           cagr = data.CAGR
         }
       } else {
-        // Calculate CAGR from base year (2023) to forecast year
-        const cagrStartYear = allYears[0] + 4 // Base year = 2023 for 2019-2031 data
+        // Calculate CAGR from base year to forecast year
+        const cagrStartYear = baseYear ?? (allYears[0] + 5) // Base year = 2026 for 2021-2033 data
         const cagrEndYear = allYears[allYears.length - 1]
         const startVal = timeSeries[cagrStartYear] || 0
         const endVal = timeSeries[cagrEndYear] || 0
@@ -1316,6 +1317,43 @@ export async function processJsonDataAsync(
       geographies = [...geographies, ...allCountries]
     }
 
+    // Fallback: if "By Region" was not present in the structure (e.g. user skipped it),
+    // build the region→country hierarchy from the known geography names that ARE in the list.
+    if (regionGeographies.length === 0) {
+      const KNOWN_REGIONS = [
+        'North America', 'Europe', 'Asia Pacific', 'Latin America', 'Middle East & Africa'
+      ]
+      const KNOWN_REGION_COUNTRIES: Record<string, string[]> = {
+        'North America': ['U.S.', 'Canada'],
+        'Europe': [
+          'U.K.', 'Germany', 'Italy', 'France', 'Spain', 'Russia', 'Norway',
+          'Romania', 'Sweden', 'Finland', 'Poland', 'Croatia', 'Denmark', 'Rest of Europe'
+        ],
+        'Asia Pacific': [
+          'China', 'India', 'Japan', 'South Korea', 'ASEAN', 'Australia', 'Rest of Asia Pacific'
+        ],
+        'Latin America': ['Brazil', 'Mexico', 'Argentina', 'Rest of Latin America'],
+        'Middle East & Africa': ['GCC', 'South Africa', 'Rest of Middle East & Africa']
+      }
+
+      for (const region of KNOWN_REGIONS) {
+        if (geographies.includes(region)) {
+          regionGeographies.push(region)
+          const regionCountriesFromData = KNOWN_REGION_COUNTRIES[region].filter(c => geographies.includes(c))
+          if (regionCountriesFromData.length > 0) {
+            regionToCountries[region] = regionCountriesFromData
+            regionCountriesFromData.forEach(c => {
+              if (!allCountries.includes(c)) allCountries.push(c)
+            })
+          }
+        }
+      }
+
+      if (regionGeographies.length > 0) {
+        console.log(`Built region hierarchy from fallback map: ${regionGeographies.length} regions`)
+      }
+    }
+
     console.log(`Found ${geographies.length} total geographies:`, geographies)
     const geographySet = new Set(geographies)
 
@@ -1386,7 +1424,8 @@ export async function processJsonDataAsync(
         segmentType,
         geographies,
         allYears,
-        segmentTypeIndex
+        segmentTypeIndex,
+        baseYear
       )
       segments[segmentType] = segmentDimension
       valueRecords.push(...records)
@@ -1412,7 +1451,8 @@ export async function processJsonDataAsync(
           geoSegType,
           geographies,
           allYears,
-          segmentTypeIndex
+          segmentTypeIndex,
+          baseYear
         )
         valueRecords.push(...geoRecords)
         await new Promise(resolve => setImmediate(resolve))
@@ -1430,7 +1470,8 @@ export async function processJsonDataAsync(
           segmentType,
           geographies,
           allYears,
-          segmentTypeIndex
+          segmentTypeIndex,
+          baseYear
         )
         volumeRecords.push(...volumeRecs)
       }
@@ -1448,7 +1489,8 @@ export async function processJsonDataAsync(
             geoSegType,
             geographies,
             allYears,
-            segmentTypeIndex
+            segmentTypeIndex,
+            baseYear
           )
           volumeRecords.push(...volumeGeoRecs)
         }

@@ -1,16 +1,16 @@
 {
   "Global": {
     "By Analyzer Type": {
-      "Liquid Analyzers": {},
       "Gas Analyzers": {
-        "Natural Gas": {},
         "Biogas": {},
         "Biomethane": {},
-        "Industrial Gases (O2, N2, CO2)": {},
+        "Emission Gases (NOx, SO2)": {},
         "Hydrogen": {},
-        "Toxic & Hazardous Gases (H2S, CO)": {},
-        "Emission Gases (NOx, SO2)": {}
-      }
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
     },
     "By Technology": {
       "Spectroscopic Analyzers": {},
@@ -36,9 +36,9 @@
     },
     "By End Use Industry": {
       "Oil and Gas": {
-        "Upstream": {},
+        "Downstream": {},
         "Midstream": {},
-        "Downstream": {}
+        "Upstream": {}
       },
       "Chemical and Petrochemical": {},
       "Pharmaceuticals and Biotechnology": {},
@@ -47,48 +47,1756 @@
       "Renewable Energy": {},
       "Food & Beverage": {},
       "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "North America": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
     },
-    "By Region": {
-      "North America": {
-        "U.S.": {},
-        "Canada": {}
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
       },
-      "Europe": {
-        "U.K.": {},
-        "Germany": {},
-        "Italy": {},
-        "France": {},
-        "Spain": {},
-        "Russia": {},
-        "Poland": {},
-        "Sweden": {},
-        "Norway": {},
-        "Denmark": {},
-        "Finland": {},
-        "Romania": {},
-        "Croatia": {},
-        "Rest of Europe": {}
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Europe": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
       },
-      "Asia Pacific": {
-        "China": {},
-        "India": {},
-        "Japan": {},
-        "South Korea": {},
-        "ASEAN": {},
-        "Australia": {},
-        "Rest of Asia Pacific": {}
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
       },
-      "Latin America": {
-        "Brazil": {},
-        "Argentina": {},
-        "Mexico": {},
-        "Rest of Latin America": {}
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Asia Pacific": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
       },
-      "Middle East & Africa": {
-        "GCC": {},
-        "South Africa": {},
-        "Rest of Middle East & Africa": {}
-      }
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Latin America": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Middle East & Africa": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "U.S.": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Canada": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Germany": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "France": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Italy": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Spain": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Russia": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Norway": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "U.K.": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Romania": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Sweden": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Finland": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Poland": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Croatia": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Denmark": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Rest of Europe": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "China": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "India": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Japan": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "South Korea": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "ASEAN": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Australia": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Rest of Asia Pacific": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Brazil": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Mexico": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Argentina": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Rest of Latin America": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "GCC": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "South Africa": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
+    }
+  },
+  "Rest of Middle East & Africa": {
+    "By Analyzer Type": {
+      "Gas Analyzers": {
+        "Biogas": {},
+        "Biomethane": {},
+        "Emission Gases (NOx, SO2)": {},
+        "Hydrogen": {},
+        "Industrial Gases (O2, N2, CO2)": {},
+        "Natural Gas": {},
+        "Toxic & Hazardous Gases (H2S, CO)": {}
+      },
+      "Liquid Analyzers": {}
+    },
+    "By Technology": {
+      "Spectroscopic Analyzers": {},
+      "Chromatography Analyzers": {},
+      "Electrochemical Analyzers": {},
+      "Thermal Conductivity Analyzers": {},
+      "Paramagnetic Analyzers": {}
+    },
+    "By Sampling Type": {
+      "Continuous Sampling Analyzers": {},
+      "Batch Sampling Analyzers": {}
+    },
+    "By Installation Type": {
+      "Fixed / Stationary Analyzers": {},
+      "Portable / Handheld Analyzers": {}
+    },
+    "By Application": {
+      "Process Monitoring": {},
+      "Quality Control": {},
+      "Environmental Monitoring": {},
+      "Safety and Compliance Monitoring": {},
+      "Others (Emission Monitoring, Leak Detection)": {}
+    },
+    "By End Use Industry": {
+      "Oil and Gas": {
+        "Downstream": {},
+        "Midstream": {},
+        "Upstream": {}
+      },
+      "Chemical and Petrochemical": {},
+      "Pharmaceuticals and Biotechnology": {},
+      "Water and Wastewater Treatment": {},
+      "Power Generation": {},
+      "Renewable Energy": {},
+      "Food & Beverage": {},
+      "Others (Pulp & Paper, Metals & Mining, etc.)": {}
     }
   }
 }
